@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <table align = "center" border ="2">
+           <tr>
+              <th> IDNO </th>
+              <th> NAME </th>
+              <th> MARKS </th>
+           </tr>
+          {% for record in data %}
+           <tr>
+              <td> {{record.idno}} </td>
+              <td> {{record.name}} </td>
+              <td> {{record.marks}} </td>
+           </tr>
+          {% endfor %}
+        </table>
+    </body>
+</html>
